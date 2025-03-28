@@ -1,2 +1,4 @@
-package western;public class Narrateur {
+package western;
+
+public class Narrateur {
 }

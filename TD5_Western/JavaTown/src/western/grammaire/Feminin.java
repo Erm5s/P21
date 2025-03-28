@@ -1,2 +1,5 @@
-package western.grammaire;public class Feminin {
+package western.grammaire;
+
+public class Feminin {
+
 }

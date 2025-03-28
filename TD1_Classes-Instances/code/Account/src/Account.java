@@ -1,12 +1,12 @@
 /**
- * Permet de connaitre le solde d'un compte et d'effectuer des virements entre comptes
+ * Permet de connaitre le solde d'un 'Account' et d'effectuer des 'transfer()' entre comptes
  * Impossible en revanche d'ajouter de la monnaie de nulle part
  */
 public class Account {
     private double m_balance;
 
     /**
-     * Constructeur du compte : cree un compte avec un solde initialisable
+     * Constructeur : cree un compte avec un solde initialisable
      * @param initialBalance : prend en parametre le solde initial du compte (seule possibilite de creation de monnaie)
      */
     public Account(double initialBalance) {

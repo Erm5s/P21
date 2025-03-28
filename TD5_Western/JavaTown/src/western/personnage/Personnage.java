@@ -1,3 +1,5 @@
+package western.personnage;
+
 public class Personnage {
     String m_nom;
 
@@ -10,7 +12,7 @@ public class Personnage {
     }
 
     String sePresenter(){
-        return "";
+        return m_nom + " - Bonjour, je suis " + m_nom + " et j'aime";
     }
 
     String boire(){
