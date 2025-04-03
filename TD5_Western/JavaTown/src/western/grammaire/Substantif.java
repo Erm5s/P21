@@ -2,12 +2,18 @@ package western.grammaire;
 
 public class Substantif {
     String m_mot;
+    Genre m_genre;
 
-    Create Substantif ()
-            + <<Create>> Substantif(boisson:String, genre:Genre)
-            + articleDefini() : String
-            + articleIndefini() : String
-            + articleParitif() : String
-            + preposition() : String
-}
+    public Substantif (String mot, Genre genre) {
+        m_mot = mot;
+        m_genre = genre;
+    }
+
+    public String getMot() {
+        return m_mot;
+    }
+
+    public Genre getGenre() {
+        return m_genre;
+    }
 }

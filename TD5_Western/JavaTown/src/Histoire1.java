@@ -1,3 +1,8 @@
+import western.Narrateur;
+import western.grammaire.Genre;
+import western.grammaire.Substantif;
+import western.grammaire.Masculin;
+import western.grammaire.Feminin;
 import western.personnage.Personnage;
 
 public class Histoire1
@@ -20,5 +25,6 @@ public class Histoire1
         homere.ajouterLignes(bill.boire(new Substantif("eau", new Feminin())));
 
         homere.raconterHistoire();
+        System.out.println(homere.raconterHistoire());
     }
 }

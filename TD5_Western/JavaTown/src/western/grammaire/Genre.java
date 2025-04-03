@@ -1,15 +1,15 @@
 package western.grammaire;
 
 public interface Genre {
-    public static String getArticleDefini(){
-        return "";
+    default Boolean voyelleDebut(String mot) {
+        char l = Character.toLowerCase(mot.charAt(0));
+        if (l == 'a' || l == 'e' || l == 'i' || l == 'o' || l == 'u') {
+            return true;
+        }
+        return false;
     }
-    abstract String getArticleIndefini() {
-        return "";
-    }
-
-    String getArticleParitif() {
-        return "";
-    }
-            + getPreposition() : String
+    String getArticleDefini(String mot);
+    String getArticleIndefini(String mot);
+    String getArticlePartitif(String mot);
+    String Preposition(String mot);
 }
