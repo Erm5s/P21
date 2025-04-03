@@ -20,16 +20,19 @@ public class Personnage {
     }
 
     public String sePresenter(){
-        return m_nom + " - Bonjour, je suis " + m_nom + " et j'aime " + m_boisson.getGenre().getArticleDefini(getBoisson()) + '.';
+        return m_nom + " - Bonjour, je suis " + m_nom + " et j'aime " + m_boisson.avecArticleDefini() + '.';
     }
 
     public String boire(){
-        return m_nom + " - Ah ! boire " +  m_boisson.getGenre().getArticlePartitif(getBoisson()) + " ! GLOUPS !";
+        return m_nom + " - Ah ! boire " +  m_boisson.avecArticlePartitif()+ " ! GLOUPS !";
     }
 
     public String boire(Substantif boisson){
-        return m_nom + " - GLOUPS ! Faut vraiment avoir soif pour boire " + boisson.getGenre().getArticlePartitif(boisson.getMot())
-                + " ! J’aurais préféré boire " + this.m_boisson.getGenre().getArticlePartitif(getBoisson()) + " !";
+        if (boisson.getMot() == getBoisson()) {
+            return boire();
+        }
+        return m_nom + " - GLOUPS ! Faut vraiment avoir soif pour boire " + boisson.avecArticlePartitif()
+                + " ! j'aurais préféré boire " + this.m_boisson.avecArticlePartitif()+ ".";
     }
     public String dire(String discours){
         return m_nom + " - " + discours;

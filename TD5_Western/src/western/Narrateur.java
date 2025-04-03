@@ -9,8 +9,8 @@ public class Narrateur {
         m_histoire += (nvLigne + "\n");
     }
 
-    public String raconterHistoire() {
-        return this.m_histoire;
+    public void raconterHistoire() {
+        System.out.println(m_histoire);
     }
 
     @Override

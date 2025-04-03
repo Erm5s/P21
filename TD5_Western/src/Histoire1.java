@@ -25,6 +25,5 @@ public class Histoire1
         homere.ajouterLignes(bill.boire(new Substantif("eau", new Feminin())));
 
         homere.raconterHistoire();
-        System.out.println(homere.raconterHistoire());
     }
 }

@@ -13,6 +13,7 @@ package western {
             + boire() : String
             + boire(boisson:Substantif) : String
             + dire(discours:String) : String
+            + getBoisson() : String
         }
     }
 
